@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_logo_description">App Logo</string>
+    <string name="about_developer_icon">About Developer Icon</string>
+    <string name="home_icon">Home Icon</string>
+    <string name="zakat_icon">Zakat Icon</string>
+    <string name="profile_icon">Profile Icon</string>
+    <string name="app_name">App Name</string>
+    <string name="welcome_to_zakat_calculator">WELCOME TO ZAKAT CALCULATOR</string>
+    <string name="calculate_zakat">Calculate Zakat</string>
+    <string name="learn_more_about_zakat">Learn More About Zakat</string>
+    <string name="about_developer">About Developer</string>
+</resources>

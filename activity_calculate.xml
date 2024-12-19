@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5a9aa0">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+            <TextView
+                android:id="@+id/titleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Calculate Zakat"
+                android:textColor="#2C3E50"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:paddingBottom="16dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/card_background"
+                android:padding="16dp"
+                android:elevation="4dp"
+                android:layout_marginBottom="16dp">
+                <EditText
+                    android:id="@+id/weightInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Gold Weight (grams)"
+                    android:inputType="numberDecimal"
+                    android:padding="12dp"
+                    android:background="#FFFFFF"
+                    android:textColor="#0f0f0f"
+                    android:layout_marginBottom="12dp" />
+                <RadioGroup
+                    android:id="@+id/goldTypeGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="12dp">
+                    <RadioButton
+                        android:id="@+id/keepGold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Keep"
+                        android:textColor="#050d0e" />
+                    <RadioButton
+                        android:id="@+id/wearGold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Wear"
+                        android:textColor="#050d0e" />
+                </RadioGroup>
+                <EditText
+                    android:id="@+id/goldValueInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Gold Value (RM)"
+                    android:inputType="numberDecimal"
+                    android:padding="12dp"
+                    android:background="#FFFFFF"
+                    android:textColor="#0f0f0f"
+                    android:layout_marginBottom="16dp" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/calculateButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#c2eaed"
+                android:text="Calculate Zakat"
+                android:textColor="#0f0f0f"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/card_background"
+                android:padding="16dp"
+                android:elevation="4dp"
+                android:layout_marginBottom="16dp">
+                <TextView
+                    android:id="@+id/zakatPayableLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Zakat Payable Value:"
+                    android:textColor="#0f0f0f"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="4dp" />
+                <TextView
+                    android:id="@+id/zakatPayableView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#4CAF50"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="16dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/totalZakatLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Total Zakat:"
+                    android:textColor="#333333"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="4dp" />
+                <TextView
+                    android:id="@+id/totalZakatView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#4CAF50"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="16dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>    </ScrollView>
+</LinearLayout>

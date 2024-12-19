@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#5a9aa0"
+    android:padding="16dp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/titleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="About Developer"
+                android:textColor="#2C3E50"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:paddingBottom="16dp" />
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                app:srcCompat="@drawable/my_image"
+                android:scaleType="centerCrop"
+                android:background="@drawable/circle_background"
+                android:elevation="6dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="@drawable/card_background"
+                android:elevation="4dp"
+                android:layout_marginBottom="16dp">
+                <TextView
+                    android:id="@+id/developerName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name: Rabiatul Adawiyah Binti Mohd Zawawi"
+                    android:textColor="#050d0e"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="8dp" />
+                <TextView
+                    android:id="@+id/studentNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Student No: 2022868198"
+                    android:textColor="#050d0e"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="8dp" />
+                <TextView
+                    android:id="@+id/copyright"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Programme Code: CDCS240"
+                    android:textColor="#050d0e"
+                    android:textSize="16sp" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/githubLink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="GitHub: https://github.com/rubyzawawi"
+                android:textColor="#edf8ed"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:autoLink="web"
+                android:textStyle="italic" />
+            <Button
+                android:id="@+id/shareButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#c2eaed"
+                android:text="Share"
+                android:textColor="#0f0f0f"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView></RelativeLayout>
